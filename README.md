@@ -1,5 +1,5 @@
-- nom :
-- prénom :
+- nom : DIALLO
+- prénom : Marly
 - URL Netlify :
 
 # Travail
