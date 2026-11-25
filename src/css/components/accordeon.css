@@ -3,13 +3,13 @@
 */
 .accordeon {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .accordeon details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .accordeon details[open] {
 
@@ -21,4 +21,16 @@
 .accordeon > details > summary::marker,
 .accordeon > details > summary::-webkit-details-marker {
   display: none;
+}
+.accordeon > details > summary::after{
+  content: "";
+  display: inline-block;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid black;
+  margin-right: 10px;
+}
+
+.accordeon > details[open] > summary::after {
+  transform: rotate(90deg);
 }
