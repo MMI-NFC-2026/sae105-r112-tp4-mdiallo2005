@@ -1,3 +1,16 @@
 /**
 * Accordeon
 */
+.accordeon {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.accordeon details {
+  display: flex;
+  flex-direction: row;
+}
+.accordeon details[open] {
+
+}
